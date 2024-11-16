@@ -1,0 +1,56 @@
+
+:root {
+  --oslometgul: #ffd500;
+}
+
+
+body {
+  background-color: #F7FFF7;
+  margin: 0;
+}
+
+/* Phone scaling */
+@media all and (max-width: 680px) {
+  header {
+    min-height: 160px;
+  }
+}
+
+
+/* Widescreen scaling */
+@media all and (min-width: 680px) {
+  header {
+    min-height: 180px;
+  }
+  .basic-info-container{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(3,auto);
+    justify-content:space-around;
+  }
+}
+
+
+.info-snippet-container{
+  border-color: red;
+  border-width: 1px;
+  border-style:groove;
+}
+
+header {
+  min-width: 100%;
+  background-color: var(--oslometgul);
+}
+
+
+
+
+/* WIP */
+@keyframes open-dropdown{
+    0% {
+
+    }
+    100% {
+        
+    }
+}
