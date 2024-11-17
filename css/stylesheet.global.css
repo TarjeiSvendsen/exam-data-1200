@@ -70,10 +70,11 @@ footer {
     border-bottom-width: 1px;
   }
 
-  .info-snippet-container> h3 {
+  .info-snippet-container>h3 {
     margin-left: 0.25em;
   }
-  .info-snippet-container> p {
+
+  .info-snippet-container>p {
     margin-left: 0.5em;
   }
 
@@ -96,7 +97,8 @@ footer {
     grid-template-columns: repeat(3, auto);
     justify-content: space-around;
   }
-  .info-snippet-container> p {
+
+  .info-snippet-container>p {
     margin-left: 0.25em;
   }
 
@@ -105,37 +107,48 @@ footer {
     border-top-style: solid;
     border-top-width: 1px;
     border-top-color: black;
-    
+
   }
-  .info-snippet-container:nth-child(n+5):nth-child(-n+7){
-     /*Adjusted answer from here: https://stackoverflow.com/a/56315469, see comment in previous block for reasoning. */
+
+  .info-snippet-container:nth-child(n+5):nth-child(-n+7) {
+    /*Adjusted answer from here: https://stackoverflow.com/a/56315469, see comment in previous block for reasoning. */
     border-bottom-style: solid;
     border-bottom-color: black;
     border-bottom-width: 1px;
   }
 
- 
+
   .course-faq-container {
     display: grid;
     justify-items: center;
     min-width: 0;
     min-height: 0;
-    grid-gap: 1em;
+    column-gap: 1em;
     row-gap: 5em;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: 1fr 1fr;
   }
 
-  .faq-single-question-wrapper{
-    height: 10em;
-  }
+  
 }
-@media all and (min-width: 1280px){
-  .introduction-container{
+
+@media all and (min-width: 1280px) {
+  .introduction-container {
     margin-top: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .course-faq-container {
+    display: grid;
+    justify-items: center;
+    min-width: 0;
+    min-height: 0;
+    column-gap: 1em;
+    row-gap: 5em;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
@@ -173,13 +186,15 @@ footer {
   display: none;
   transition: all .3s linear;
   margin-left: 1em;
+  margin-right: 1em;
 
 }
 
+
 .faq-single-question-wrapper {
-  width: 50%;
-  
-  
+  width: 100%;
+
+
 }
 
 
