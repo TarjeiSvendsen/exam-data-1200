@@ -69,6 +69,14 @@ footer {
     border-bottom-color: black;
     border-bottom-width: 1px;
   }
+
+  .info-snippet-container> h3 {
+    margin-left: 0.25em;
+  }
+  .info-snippet-container> p {
+    margin-left: 0.5em;
+  }
+
 }
 
 
@@ -88,7 +96,25 @@ footer {
     grid-template-columns: repeat(3, auto);
     justify-content: space-around;
   }
+  .info-snippet-container> p {
+    margin-left: 0.25em;
+  }
 
+  .info-snippet-container {
+    /* Makes sure the borders don't overlap on widescreens in display: grid; */
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: black;
+    
+  }
+  .info-snippet-container:nth-child(n+5):nth-child(-n+7){
+     /*Adjusted answer from here: https://stackoverflow.com/a/56315469, see comment in previous block for reasoning. */
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-bottom-width: 1px;
+  }
+
+ 
   .course-faq-container {
     display: grid;
     justify-items: center;
@@ -99,6 +125,8 @@ footer {
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: 1fr 1fr;
   }
+
+  
 }
 
 
@@ -107,9 +135,6 @@ footer {
   
 }
 
-.info-snippet-container>* {
-  margin-left: 1em;
-}
 
 
 .course-faq-container {
