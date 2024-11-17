@@ -126,15 +126,18 @@ footer {
     grid-template-columns: 1fr 1fr;
   }
 
-  
+  .faq-single-question-wrapper{
+    height: 10em;
+  }
 }
-
-
-
-.info-snippet-container:nth-child(odd){
-  
+@media all and (min-width: 1280px){
+  .introduction-container{
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
-
 
 
 .course-faq-container {
@@ -170,15 +173,13 @@ footer {
   display: none;
   transition: all .3s linear;
   margin-left: 1em;
-  text-align: center;
-  overflow-y: auto;
-  border: 1px dashed blue;
+
 }
 
 .faq-single-question-wrapper {
   width: 50%;
-  height: 10em;
-  border: 1px red solid;
+  
+  
 }
 
 

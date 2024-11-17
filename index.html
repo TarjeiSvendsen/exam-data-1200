@@ -10,6 +10,7 @@
 
 <body>
   <header>
+    
     <a href="https://www.oslomet.no" aria-label="OsloMet Front Page">
       <svg aria-label="OsloMet Front Page Image" role="img" width="60px" height="36px" viewBox="0 0 60 36" version="1.1"
         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -44,7 +45,13 @@
     <p>MENY</p>
   </header>
   <main>
-    <article>
+    <article class="introduction-container">
+      <picture class="picture-scaled">
+        <source media="(max-width: 920px)" srcset="images/thumbnail_medium.jpg" width="100%">
+        <source media="(max-width: 680px)" srcset="images/thumbnail_small.jpg" width="100%">
+        <img src="images/thumbnail_large.jpg" width="auto"  alt="Thumbnail for video">
+      </picture>
+
       <h1>Matematisk modellering og datavitenskap - ingeniør</h1>
       <h2>Bachelorprogram</h2>
       <aside>
@@ -247,8 +254,8 @@
         <a href="https://www.oslomet.no/alumni">Alumni</a>
         <a href="https://www.oslomet.no/ansatteoversikt">Ansatteoversikt</a>
         <a href="https://www.oslomet.no/arrangementsoversikt">Arrangementsoversikt</a>
-        <a href="https://www.oslomet.no/for-ansatte">For ansatte</a>
-        <a href="https://www.oslomet.no/for-studenter">For studenter</a>
+        <a href="https://www.oslomet.no/om/for-ansatte">For ansatte</a>
+        <a href="https://www.oslomet.no/om/for-studenter">For studenter</a>
         <a href="https://www.oslomet.no/ledige-stillinger">Ledige stillinger</a>
         <a href="https://www.oslomet.no/om/personvernerklering-informasjonskapslar">Personvernerklæring &
           informasjonskapsler</a>
