@@ -37,6 +37,9 @@ footer{
   flex-direction: column;
   justify-content: start;
 }
+.footer-useful-links-box > a{
+  margin: 0.25em;
+}
 
 
 /* Phone scaling */
@@ -64,6 +67,16 @@ footer{
     grid-template-columns: repeat(3,auto);
     justify-content:space-around;
   }
+  .course-faq-container{
+    display: grid;
+    justify-items: center;
+    min-width: 0;
+    min-height: 0;
+    grid-gap: 1em;
+    row-gap: 5em;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: 1fr 1fr ;
+  }
 }
 
 
@@ -75,34 +88,58 @@ footer{
 }
 
 
-.faq-box-wrapper{
+.course-faq-container{
+  height: auto;
+}
+.faq-toggle-header{
   display: flex;
-  height: fit-content;
-  width: fit-content;
-  justify-content: left;
+  max-width: fit-content;
   align-items: center;
+  justify-content: end;
+
   
 }
+.faq-toggle-header > svg{
+  margin-left: 1em;
+  margin-right: 1em;
+  width: 1em;
+  height: auto;
+}
+.faq-toggle-header > h3{
+  position: relative;
+}
+
 .faq-dropdown-toggle{
   -webkit-appearance: none;
   appearance: none;
 }
 .faq-dropdown-content{
   display: none;
-  transition: all .3s linear;
+  transition: all .3s linear;  
+  margin-left: 1em;
+  text-align: center;
+  overflow-y: auto;
+  border: 1px dashed blue;
+}
+.faq-single-question-wrapper {
+  width: 50%;
+  height: 10em;
+  border: 1px red solid;
 }
 
-/* This block requires a slightly annoying change in the html to work, but ultimately makes it easier, as we do not have to specify for each dropdown. Code taken from here: https://stackoverflow.com/questions/44832572/pure-css-clickable-dropdown  */
+
+/* This block requires a slightly annoying HTML structure to work, but is quite simple, from my understanding, it selects the next sibling of the type specified, unfortunately that means the .faq-dropdown-toggle can't be a part of the .faq-toggle-header. Code taken from here: https://stackoverflow.com/questions/44832572/pure-css-clickable-dropdown  */
 .faq-dropdown-toggle:checked ~ .faq-dropdown-content{
   display: block;
 }
 
 /* Using the same logic above for getting the checked, although a bit hacky selector-wise */
-.faq-dropdown-toggle:checked ~ label > svg > g#plus > path#Line{
+.faq-dropdown-toggle:checked ~ label > svg  >  path:nth-child(1){
   transition: all .2s ease-in-out;
   transform: rotate(90deg);
+  transform-origin: center;
 
 }
-label > svg > g#plus > path#Line{
+label > svg > path:nth-child(1){
   transition: all .2s ease-in-out;
 }
