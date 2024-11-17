@@ -1,4 +1,3 @@
-
 :root {
   --oslometgul: #ffd500;
 }
@@ -13,18 +12,21 @@ body {
   margin: 0;
 }
 
-footer{
+footer {
   background-color: lightblue;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.footer-upper-wrapper{
+
+.footer-upper-wrapper {
   flex-direction: column;
   align-items: center;
 }
-.footer-lower-wrapper, .footer-upper-wrapper{
+
+.footer-lower-wrapper,
+.footer-upper-wrapper {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
@@ -32,13 +34,18 @@ footer{
   margin-bottom: 1em;
 }
 
-.footer-lower-wrapper > * {
+
+.footer-lower-wrapper>* {
   display: flex;
   flex-direction: column;
   justify-content: start;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
-.footer-useful-links-box > a{
-  margin: 0.25em;
+
+.footer-useful-links-box>a {
+  /* Adjusted for Lighthouse, which made the claim that touch controls might have difficulty differentiating links */
+  margin: 0.3em;
 }
 
 
@@ -47,8 +54,20 @@ footer{
   header {
     min-height: 160px;
   }
-  .footer-lower-wrapper{
+
+  .footer-lower-wrapper {
     display: inline;
+  }
+
+
+  .info-snippet-container:nth-child(odd) {
+    /* Makes sure the borders don't overlap on mobile */
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: black;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-bottom-width: 1px;
   }
 }
 
@@ -58,69 +77,79 @@ footer{
   header {
     min-height: 180px;
   }
-  aside{
+
+  aside {
     margin: 1em;
   }
-  .basic-info-container{
+
+  .basic-info-container {
     display: grid;
-    grid-template-rows: repeat(3,1fr);
-    grid-template-columns: repeat(3,auto);
-    justify-content:space-around;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-around;
   }
-  .course-faq-container{
+
+  .course-faq-container {
     display: grid;
     justify-items: center;
     min-width: 0;
     min-height: 0;
     grid-gap: 1em;
     row-gap: 5em;
-    grid-template-rows: repeat(4,1fr);
-    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 
-.info-snippet-container{
- border-top-style: solid;
- border-top-width: 1px;
- border-top-color: black;
+
+.info-snippet-container:nth-child(odd){
   
 }
 
+.info-snippet-container>* {
+  margin-left: 1em;
+}
 
-.course-faq-container{
+
+.course-faq-container {
   height: auto;
 }
-.faq-toggle-header{
+
+.faq-toggle-header {
   display: flex;
   max-width: fit-content;
   align-items: center;
   justify-content: end;
 
-  
+
 }
-.faq-toggle-header > svg{
+
+.faq-toggle-header>svg {
   margin-left: 1em;
   margin-right: 1em;
   width: 1em;
   height: auto;
 }
-.faq-toggle-header > h3{
+
+.faq-toggle-header>h3 {
   position: relative;
 }
 
-.faq-dropdown-toggle{
+.faq-dropdown-toggle {
   -webkit-appearance: none;
   appearance: none;
 }
-.faq-dropdown-content{
+
+.faq-dropdown-content {
   display: none;
-  transition: all .3s linear;  
+  transition: all .3s linear;
   margin-left: 1em;
   text-align: center;
   overflow-y: auto;
   border: 1px dashed blue;
 }
+
 .faq-single-question-wrapper {
   width: 50%;
   height: 10em;
@@ -129,17 +158,18 @@ footer{
 
 
 /* This block requires a slightly annoying HTML structure to work, but is quite simple, from my understanding, it selects the next sibling of the type specified, unfortunately that means the .faq-dropdown-toggle can't be a part of the .faq-toggle-header. Code taken from here: https://stackoverflow.com/questions/44832572/pure-css-clickable-dropdown  */
-.faq-dropdown-toggle:checked ~ .faq-dropdown-content{
+.faq-dropdown-toggle:checked~.faq-dropdown-content {
   display: block;
 }
 
 /* Using the same logic above for getting the checked, although a bit hacky selector-wise */
-.faq-dropdown-toggle:checked ~ label > svg  >  path:nth-child(1){
+.faq-dropdown-toggle:checked~label>svg>path:nth-child(1) {
   transition: all .2s ease-in-out;
   transform: rotate(90deg);
   transform-origin: center;
 
 }
-label > svg > path:nth-child(1){
+
+label>svg>path:nth-child(1) {
   transition: all .2s ease-in-out;
 }
