@@ -43,9 +43,9 @@ footer {
   margin-bottom: 1em;
 }
 
-.footer-useful-links-box>a {
+.footer-useful-links-box>a, .footer-social-media-links-box > a, .footer-contact-information-box > a {
   /* Adjusted for Lighthouse, which made the claim that touch controls might have difficulty differentiating links */
-  margin: 0.3em;
+  margin: 0.5em;
 }
 
 
@@ -125,7 +125,7 @@ footer {
     min-height: 0;
     column-gap: 1em;
     row-gap: 5em;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: auto auto auto auto;
     grid-template-columns: 1fr 1fr;
   }
 
