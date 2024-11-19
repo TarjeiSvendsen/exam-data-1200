@@ -13,7 +13,7 @@ body {
 }
 
 footer {
-  background-color: lightblue;
+  background-color: var(--oslometgul);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,8 +43,10 @@ footer {
   margin-bottom: 1em;
 }
 
-.footer-useful-links-box>a, .footer-social-media-links-box > a, .footer-contact-information-box > a {
-  /* Adjusted for Lighthouse, which made the claim that touch controls might have difficulty differentiating links */
+.footer-useful-links-box>a,
+.footer-social-media-links-box>a,
+.footer-contact-information-box>a {
+  /* Adjusted for Lighthouse, which made the claim that touch controls might have difficulty selecting links without proper spacing between them */
   margin: 0.5em;
 }
 
@@ -59,6 +61,7 @@ footer {
   .footer-lower-wrapper {
     display: inline;
   }
+
   .basic-info-container {
     display: grid;
     grid-template-rows: auto auto auto auto;
@@ -87,6 +90,14 @@ footer {
 
   .info-snippet-container>p {
     margin-left: 0.5em;
+  }
+
+  .student-stories-button {
+    width: 100%;
+    height: 3em;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    padding-top: 1em;
   }
 
 }
@@ -140,8 +151,9 @@ footer {
     grid-template-columns: 1fr 1fr;
   }
 
-  
+
 }
+
 /* Even wider screen scaling */
 @media all and (min-width: 1280px) {
   .basic-info-container {
@@ -150,6 +162,7 @@ footer {
     grid-template-columns: auto auto auto auto;
     justify-content: space-around;
   }
+
   .introduction-container {
     margin-top: 1em;
     display: flex;
@@ -157,9 +170,13 @@ footer {
     align-items: center;
   }
 
+  .introduction-container>h1 {
+    font-size: xx-large;
+  }
+
   .study-faq-container {
     display: grid;
-    justify-items: center;
+    justify-content: center;
     min-width: 0;
     min-height: 0;
     column-gap: 1em;
@@ -167,30 +184,90 @@ footer {
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+
+  .student-stories-button {
+    width: 15em;
+    height: 3em;
+    padding-left: 2em;
+    padding-bottom: 2em;
+    padding-top: 2em;
+  }
+
+  .student-stories-picture-box>picture {
+    width: 50%;
+  }
+
+  .course-group-header{
+    border-left-style: solid;
+    border-left-color: black;
+    border-left-width: 1px;
+    
+  }
+
 }
 
 
 /* This section contains styling for the "studiets oppbygging, which was moved from the faq section to its own, for reasons of readibility  */
 
-.courses-wrapper{
+
+
+.courses-wrapper {
   display: flex;
-  gap: 1em;
-}
-.course-box{
-width: fit-content;
-border-top-style: solid;
-border-top-color: black;
-border-top-width: 1px;
-padding-top:1em;
-
+  gap: 2em;
 }
 
-.course-box-lower{
+.course-box {
+  width: fit-content;
+  border-top-style: solid;
+  border-top-color: black;
+  border-top-width: 1px;
+  padding-top: 1em;
+
+}
+.course-group-header{
+  padding-left: 0.5em;
+  width: min-content;
+  margin-top: 0;
+  
+}
+.course-box-lower {
+  display: flex;
+  justify-content: space-between;
   margin-top: 1em;
 }
+.course-box-lower > span{
 
-.indented-course-basic{
+  margin-right: 0.5em;
+}
+
+.indented-course-basic {
+  margin-left: 0.5em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+
+.student-stories-picture-box {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  background-color: var(--oslometgul);
+}
+.student-stories-picture-box > * {
+  width: fit-content;
+}
+.student-stories-picture-box > h3, h4 {
   margin: 0.5em;
+}
+.student-stories-picture-box > h4{
+  margin-left: 1em;
+}
+
+
+.student-stories-button {
+  display: block;
+  background-color: var(--oslometgul);
+  color: black;
 }
 
 /* This section contains styling for the faq dropdown menu section */
@@ -200,14 +277,12 @@ padding-top:1em;
 
 .faq-toggle-header {
   display: flex;
-  max-width: fit-content;
-  align-items: center;
-  justify-content: end;
+
 
 
 }
 
-.faq-toggle-header>svg {
+.faq-toggle-header > svg, .course-box >svg {
   margin-left: 1em;
   margin-right: 1em;
   width: 1em;
