@@ -263,12 +263,10 @@ footer {
 .student-stories-picture-box > * {
   width: fit-content;
 }
-.student-stories-picture-box > h3, h4 {
+.student-stories-picture-box > h3 + h4 {
   margin: 0.5em;
 }
-.student-stories-picture-box > h4{
-  margin-left: 1em;
-}
+
 
 
 .student-stories-button {
