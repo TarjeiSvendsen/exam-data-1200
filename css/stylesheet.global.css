@@ -158,6 +158,21 @@ footer {
     grid-template-columns: 1fr 1fr;
   }
 
+  .course-group-header{
+    padding-left: 0.5em;
+    width: min-content;
+    margin-top: 0;
+    border-left-style: solid;
+    border-left-color: black;
+    border-left-width: 1px;
+    
+  }
+  .courses-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+  }
+
 
 }
 
@@ -200,28 +215,10 @@ footer {
     padding-top: 2em;
   }
 
-  .student-stories-picture-box>picture {
-    width: 50%;
-  }
-
-  .course-group-header{
-    border-left-style: solid;
-    border-left-color: black;
-    border-left-width: 1px;
-    
-  }
-
 }
 
 
 /* This section contains styling for the "studiets oppbygging, which was moved from the faq section to its own, for reasons of readibility  */
-
-
-
-.courses-wrapper {
-  display: flex;
-  gap: 2em;
-}
 
 .course-box {
   width: fit-content;
@@ -231,12 +228,7 @@ footer {
   padding-top: 1em;
 
 }
-.course-group-header{
-  padding-left: 0.5em;
-  width: min-content;
-  margin-top: 0;
-  
-}
+
 .course-box-lower {
   display: flex;
   justify-content: space-between;
