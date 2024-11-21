@@ -2,6 +2,16 @@
   --oslometgul: #ffd500;
 }
 
+/* Importing Fonts */
+@font-face {
+  font-family: "Moderat Bold";
+  src: url("../fonts/Moderat-Bold.woff2");
+}
+@font-face {
+  font-family: "Moderat Regular";
+  src: url("../fonts/Moderat-Regular.woff2");
+}
+
 header {
   min-width: 100%;
   background-color: var(--oslometgul);
