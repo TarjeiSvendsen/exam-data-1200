@@ -64,6 +64,7 @@ footer {
 }
 a:link, a:visited{
   color: black;
+  text-decoration-color: var(--oslometgul);
 }
 
 .footer-useful-links-box>a,
