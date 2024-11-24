@@ -1,5 +1,5 @@
 :root {
-  background-color: #E8F8F9;
+  background-color: #ffffff;
   --oslometgul: #ffd500;
   font-family:  "Moderat Regular","Helvetica", "Sans-Serif";
 }
@@ -32,12 +32,27 @@ footer {
   flex-direction: column;
 }
 
+h1 {
+  font-size: 3rem;
+  margin-bottom:0;
+}
+
+hr {
+  border: 1px solid #e2e2e2;
+}
+
 
 
 
 
 
 /* Index Page Specific Styling */
+
+.article-wrapper {
+  margin: 3rem auto 3rem auto;
+  max-width:80rem;
+  width:85%;
+}
 
 .footer-upper-wrapper {
   flex-direction: column;
@@ -74,10 +89,23 @@ a:link, a:visited{
   margin: 0.5em;
 }
 
+.course-statement {
+  margin:3.5rem 0 3rem 0;
+  font-size:clamp(1rem, 3vw, 1.5rem);
+  max-width:640px;
+  width:80%;
+  justify-self:center;
+}
+
 
 
 /* Phone scaling */
-@media all and (max-width: 680px) {
+@media all and (max-width: 700px) {
+  h1 {
+    font-size:6.6vw;
+    hyphens:auto;
+  }
+
   header {
     min-height: 160px;
   }
@@ -87,10 +115,13 @@ a:link, a:visited{
   }
 
   .basic-info-container {
+    margin:1rem 0;
     display: grid;
     grid-template-rows: auto auto auto auto;
     grid-template-columns: auto auto;
-    justify-content: space-around;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
   }
 
   .info-snippet-container {
@@ -98,35 +129,20 @@ a:link, a:visited{
     border-top-style: solid;
     border-top-width: 1px;
     border-top-color: black;
-
-  }
-
-  .info-snippet-container:nth-child(n+6):nth-child(-n+7) {
-    /*Adjusted answer from here: https://stackoverflow.com/a/56315469, see comment in previous block for reasoning. */
-    border-bottom-style: solid;
-    border-bottom-color: black;
-    border-bottom-width: 1px;
-  }
-
-  .info-snippet-container>h3 {
-    margin-left: 0.25em;
-  }
-
-  .info-snippet-container>p {
-    margin-left: 0.5em;
+    padding-top:0.5rem;
+    width:100%;
   }
 
   .student-stories-button {
     width: 100%;
-    
-    
   }
 
 }
 
 
 /* Widescreen scaling */
-@media all and (min-width: 680px) {
+@media all and (min-width: 700px) {
+
   header {
     min-height: 180px;
   }
@@ -136,14 +152,11 @@ a:link, a:visited{
   }
 
   .basic-info-container {
+    margin:1rem 0;
     display: grid;
     grid-template-rows: auto auto auto;
     grid-template-columns: auto auto auto;
-    justify-content: space-around;
-  }
-
-  .info-snippet-container>p {
-    margin-left: 0.25em;
+    align-items:flex-start;
   }
 
   .info-snippet-container {
@@ -151,18 +164,12 @@ a:link, a:visited{
     border-top-style: solid;
     border-top-width: 1px;
     border-top-color: black;
-
-  }
-
-  .info-snippet-container:nth-child(n+5):nth-child(-n+7) {
-    /*Adjusted answer from here: https://stackoverflow.com/a/56315469, see comment in previous block for reasoning. */
-    border-bottom-style: solid;
-    border-bottom-color: black;
-    border-bottom-width: 1px;
+    width:13rem;
   }
 
 
   .study-faq-container {
+    margin:3rem 0;
     display: grid;
     justify-items: center;
     min-width: 0;
@@ -195,21 +202,18 @@ a:link, a:visited{
 /* Even wider screen scaling */
 @media all and (min-width: 1280px) {
   .basic-info-container {
+    margin:1rem 0;
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: auto auto auto auto;
-    justify-content: space-around;
+    align-items:flex-start;
   }
 
   .introduction-container {
     margin-top: 1em;
     display: flex;
     flex-direction: column;
-    align-items: center;
-  }
-
-  .introduction-container>h1 {
-    font-size: xx-large;
+    align-items: flex-start;
   }
 
   .study-faq-container {
