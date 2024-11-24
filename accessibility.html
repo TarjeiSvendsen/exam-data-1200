@@ -15,7 +15,7 @@
     <main>
         <article>
             <h1>
-                The Shortcomings of Automatic Accessibility Testing
+                Possible Shortcomings of Automatic Accessibility Testing
             </h1>
             <h2>Differences in available tools</h2>
             <p>
@@ -40,7 +40,9 @@
             <p>As we made the decision to include dropdown dialogues, similar to how they were on the original page,
                 this is our largest potential point of failure. Display: hidden for the dropdown content makes sure
                 screen readers skip the
-                reading the content if the dropdown menu is collapsed, so this potential pitfall is counteracted. Another example was the potential to navigate the website using the keyboard and avoid getting stuck somewhere, although our site was able to be navigated wihtout hiccups using the keyboard</p>
+                reading the content if the dropdown menu is collapsed, so this potential pitfall is counteracted.
+                Another example was the potential to navigate the website using the keyboard and avoid getting stuck
+                somewhere, although our site was able to be navigated wihtout hiccups using the keyboard</p>
 
             <h2>Other examples from our code</h2>
             <p>Firefox's accessibility tool highlighted the need for increasing contrast for the links in the footer, as
@@ -49,7 +51,8 @@
                 color: black;
               }</code>. It also showed a violation of the required text labels on some icons, so that was fixed with
                 <code>svg viewBox="0 0 17 16" aria-label="Icon showing an optional course"</code>. This example is from
-                the course table. </p>
+                the course table.
+            </p>
         </article>
     </main>
 </body>
