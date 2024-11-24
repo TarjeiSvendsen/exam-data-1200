@@ -1,5 +1,7 @@
 :root {
+  background-color: #E8F8F9;
   --oslometgul: #ffd500;
+  font-family:  "Moderat Regular","Helvetica", "Sans-Serif";
 }
 
 /* Importing Fonts */
@@ -112,10 +114,8 @@ footer {
 
   .student-stories-button {
     width: 100%;
-    height: 3em;
-    padding-left: 1em;
-    padding-bottom: 1em;
-    padding-top: 1em;
+    
+    
   }
 
 }
@@ -219,14 +219,7 @@ footer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
-  .student-stories-button {
-    width: 15em;
-    height: 3em;
-    padding-left: 2em;
-    padding-bottom: 2em;
-    padding-top: 2em;
-  }
-
+  
 }
 
 
@@ -349,18 +342,35 @@ label>svg>path:nth-child(1) {
 
 /* Start of Activity Specific Styling */
 
+/* Phone Screen Scaling */
+@media all and (max-width: 680px) {
+
+  .activity-image-group > picture > * {
+    width: 100%;
+  }
+}
 /* Widescreen Scaling */
 @media all and (min-width: 680px) {
 
+  .main-activity-image{
+    margin-top: 1rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .activity-image-group {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: minmax(0,auto) minmax(0,auto);
+  
+  }
 }
 
 .activity-button-group {
   display: flex;
-  gap: 3em;
-  flex-wrap: wrap;
+  gap: 1em;
+
 }
-
-.activity-image-group {
-  display: inline-block;
-
+.main-activity-image > img{
+  margin-top: 1rem;
 }
