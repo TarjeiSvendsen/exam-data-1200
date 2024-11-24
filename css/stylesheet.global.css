@@ -7,6 +7,7 @@
   font-family: "Moderat Bold";
   src: url("../fonts/Moderat-Bold.woff2");
 }
+
 @font-face {
   font-family: "Moderat Regular";
   src: url("../fonts/Moderat-Regular.woff2");
@@ -168,15 +169,16 @@ footer {
     grid-template-columns: 1fr 1fr;
   }
 
-  .course-group-header{
+  .course-group-header {
     padding-left: 0.5em;
     width: min-content;
     margin-top: 0;
     border-left-style: solid;
     border-left-color: black;
     border-left-width: 1px;
-    
+
   }
+
   .courses-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -244,7 +246,8 @@ footer {
   justify-content: space-between;
   margin-top: 1em;
 }
-.course-box-lower > span{
+
+.course-box-lower>span {
 
   margin-right: 0.5em;
 }
@@ -262,10 +265,12 @@ footer {
   width: fit-content;
   background-color: var(--oslometgul);
 }
-.student-stories-picture-box > * {
+
+.student-stories-picture-box>* {
   width: fit-content;
 }
-.student-stories-picture-box > h3 + h4 {
+
+.student-stories-picture-box>h3+h4 {
   margin: 0.5em;
 }
 
@@ -289,7 +294,8 @@ footer {
 
 }
 
-.faq-toggle-header > svg, .course-box >svg {
+.faq-toggle-header>svg,
+.course-box>svg {
   margin-left: 1em;
   margin-right: 1em;
   width: 1em;
@@ -339,3 +345,22 @@ label>svg>path:nth-child(1) {
 }
 
 /* End of Index Specifc Styling */
+
+
+/* Start of Activity Specific Styling */
+
+/* Widescreen Scaling */
+@media all and (min-width: 680px) {
+
+}
+
+.activity-button-group {
+  display: flex;
+  gap: 3em;
+  flex-wrap: wrap;
+}
+
+.activity-image-group {
+  display: inline-block;
+
+}
