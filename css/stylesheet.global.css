@@ -68,6 +68,12 @@ hr {
   max-width: 80rem;
   width: 85%;
 }
+.various-wrapper{
+  margin: 3rem auto 3rem auto;
+  max-width: 65rem;
+  width: 65%;
+}
+
 
 .footer-upper-wrapper {
   flex-direction: column;
@@ -83,7 +89,10 @@ hr {
   margin-bottom: 1em;
 }
 
-
+.faglig-leder-box > img {
+  margin: 1rem 0;
+  max-width: 10rem;
+}
 .footer-lower-wrapper>* {
 
   display: flex;
@@ -158,9 +167,7 @@ a:visited {
     width: 100%;
   }
 
-  .student-stories-button {
-    width: 100%;
-  }
+
 
 }
 
@@ -282,27 +289,11 @@ a:visited {
 }
 
 
-.student-stories-picture-box {
-  display: flex;
-  flex-direction: column;
-  width: fit-content;
-  background-color: var(--oslometgul);
-}
-
-.student-stories-picture-box>* {
-  width: fit-content;
-}
-
-.student-stories-picture-box>h3+h4 {
-  margin: 0.5em;
-}
-
-
 
 .student-stories-button {
-  display: block;
+
   background-color: var(--oslometgul);
-  color: black;
+  
 }
 
 /* This section contains styling for the faq dropdown menu section */
