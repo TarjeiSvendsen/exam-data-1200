@@ -188,6 +188,13 @@ a:visited {
     width: 100%;
   }
 
+  .study-wrapper article h4 {
+    margin-top: 3.5rem;
+  }
+
+  .course-box {
+    margin-bottom: 2rem;
+  }
 
 
 }
