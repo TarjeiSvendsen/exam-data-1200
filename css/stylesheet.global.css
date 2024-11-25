@@ -344,8 +344,9 @@ a:visited {
 .course-box>svg {
   margin-left: 1em;
   margin-right: 1em;
-  width: 1em;
-  height: auto;
+  flex-shrink: 0;
+  width: auto;
+  height: 1em;
 }
 
 .faq-dropdown-toggle {
