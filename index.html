@@ -10,7 +10,7 @@
 
 <body>
   <header>
-
+    <!-- Divs used only to separate logo from links -->
     <div class="header-left"><a href="https://www.oslomet.no" aria-label="OsloMet Front Page">
         <svg aria-label="OsloMet Front Page Image" role="img" width="60px" height="36px" viewBox="0 0 60 36"
           version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -52,6 +52,7 @@
   </header>
   <main>
     <section class="article-wrapper">
+      <!-- Wrapper class to allow proper positioning on the screen -->
       <article class="introduction-container">
         <picture class="picture-scaled">
           <source media="(max-width: 920px)" srcset="images/oslomet/thumbnail_medium.webp" width="100%">
@@ -65,7 +66,8 @@
 
 
       </article>
-      <article class="basic-info-container">
+      <article class="basic-info-container" aria-label="Basic snippets of information about the degree">
+        <!-- Contains basic info snippes about the degree -->
         <section class="info-snippet-container">
           <h3>Studiested</h3>
           <p>Pilestredet i Oslo</p>
@@ -107,16 +109,16 @@
 
 
       <article class="study-faq-container" aria-label="Frequently Asked Questions">
-        <!-- This definitely needs accessibility thingies -->
+        <!-- Contains Frequently asked Questions -->
         <section class="faq-single-question-wrapper">
           <!-- This input has to remain outside the wrapper because in the css, it relies on selecting the next sibling to toggle the dropdown, and it does not work another level down, only when on the same level as the class being "searched" for.  -->
           <input type="checkbox" class="faq-dropdown-toggle" name="faq-dropdown-toggle-1" id="faq-dropdown-toggle-1" />
 
           <label for="faq-dropdown-toggle-1" class="faq-toggle-header"><svg viewBox="0 0 10 10"
               aria-label="Plus icon for dropdown menu">
-              <!-- Messy piece, but simplifies things although it sacrifices readability -->
-              <path d="M5,0 L5,10" id="Line" stroke="black" />
-              <path d="M10,5 L0,5" id="Line-Copy" stroke="black" />
+
+              <path d="M5,0 L5,10"  stroke="black" />
+              <path d="M10,5 L0,5" stroke="black" />
 
             </svg>
             <span>Opptakskrav og poeng</span>
@@ -141,14 +143,12 @@
           </div>
         </section>
         <section class="faq-single-question-wrapper">
-          <!-- This input has to remain outside the wrapper because in the css, it relies on selecting the next sibling to toggle the dropdown, and it does not work another level down, only when on the same level as the class being "searched" for.  -->
           <input type="checkbox" class="faq-dropdown-toggle" name="faq-dropdown-toggle-2" id="faq-dropdown-toggle-2" />
 
           <label for="faq-dropdown-toggle-2" class="faq-toggle-header"><svg viewBox="0 0 10 10"
               aria-label="Plus icon for dropdown menu">
-              <!-- Messy piece, but simplifies things although it sacrifices readability -->
-              <path d="M5,0 L5,10" id="Line" stroke="black" />
-              <path d="M10,5 L0,5" id="Line-Copy" stroke="black" />
+              <path d="M5,0 L5,10"  stroke="black" />
+              <path d="M10,5 L0,5"  stroke="black" />
 
             </svg>
             <span>Slik søker du</span>
@@ -171,14 +171,13 @@
           </div>
         </section>
         <section class="faq-single-question-wrapper">
-          <!-- This input has to remain outside the wrapper because in the css, it relies on selecting the next sibling to toggle the dropdown, and it does not work another level down, only when on the same level as the class being "searched" for.  -->
           <input type="checkbox" class="faq-dropdown-toggle" name="faq-dropdown-toggle-3" id="faq-dropdown-toggle-3" />
 
           <label for="faq-dropdown-toggle-3" class="faq-toggle-header"><svg viewBox="0 0 10 10"
               aria-label="Plus icon for dropdown menu">
-              <!-- Messy piece, but simplifies things although it sacrifices readability -->
-              <path d="M5,0 L5,10" id="Line" stroke="black" />
-              <path d="M10,5 L0,5" id="Line-Copy" stroke="black" />
+
+              <path d="M5,0 L5,10"  stroke="black" />
+              <path d="M10,5 L0,5"  stroke="black" />
 
             </svg>
             <span>Hva lærer du?</span>
@@ -208,14 +207,12 @@
           </div>
         </section>
         <section class="faq-single-question-wrapper">
-          <!-- This input has to remain outside the wrapper because in the css, it relies on selecting the next sibling to toggle the dropdown, and it does not work another level down, only when on the same level as the class being "searched" for.  -->
           <input type="checkbox" class="faq-dropdown-toggle" name="faq-dropdown-toggle-4" id="faq-dropdown-toggle-4" />
 
           <label for="faq-dropdown-toggle-4" class="faq-toggle-header"><svg viewBox="0 0 10 10"
               aria-label="Plus icon for dropdown menu">
-              <!-- Messy piece, but simplifies things although it sacrifices readability -->
-              <path d="M5,0 L5,10" id="Line" stroke="black" />
-              <path d="M10,5 L0,5" id="Line-Copy" stroke="black" />
+              <path d="M5,0 L5,10"  stroke="black" />
+              <path d="M10,5 L0,5"  stroke="black" />
 
             </svg>
             <span>Hvordan foregår undervisningen?</span>
@@ -245,14 +242,12 @@
           </div>
         </section>
         <section class="faq-single-question-wrapper">
-          <!-- This input has to remain outside the wrapper because in the css, it relies on selecting the next sibling to toggle the dropdown, and it does not work another level down, only when on the same level as the class being "searched" for.  -->
           <input type="checkbox" class="faq-dropdown-toggle" name="faq-dropdown-toggle-5" id="faq-dropdown-toggle-5" />
 
           <label for="faq-dropdown-toggle-5" class="faq-toggle-header"><svg viewBox="0 0 10 10"
               aria-label="Plus icon for dropdown menu">
-              <!-- Messy piece, but simplifies things although it sacrifices readability -->
-              <path d="M5,0 L5,10" id="Line" stroke="black" />
-              <path d="M10,5 L0,5" id="Line-Copy" stroke="black" />
+              <path d="M5,0 L5,10"  stroke="black" />
+              <path d="M10,5 L0,5"  stroke="black" />
 
             </svg>
             <span>Hva koster det?</span>
@@ -272,14 +267,12 @@
           </div>
         </section>
         <section class="faq-single-question-wrapper">
-          <!-- This input has to remain outside the wrapper because in the css, it relies on selecting the next sibling to toggle the dropdown, and it does not work another level down, only when on the same level as the class being "searched" for.  -->
           <input type="checkbox" class="faq-dropdown-toggle" name="faq-dropdown-toggle-6" id="faq-dropdown-toggle-6" />
 
           <label for="faq-dropdown-toggle-6" class="faq-toggle-header"><svg viewBox="0 0 10 10"
               aria-label="Plus icon for dropdown menu">
-              <!-- Messy piece, but simplifies things although it sacrifices readability -->
-              <path d="M5,0 L5,10" id="Line" stroke="black" />
-              <path d="M10,5 L0,5" id="Line-Copy" stroke="black" />
+              <path d="M5,0 L5,10"  stroke="black" />
+              <path d="M10,5 L0,5"  stroke="black" />
 
             </svg>
             <span>Hva kan du jobbe som?</span>
@@ -306,14 +299,12 @@
           </div>
         </section>
         <section class="faq-single-question-wrapper">
-          <!-- This input has to remain outside the wrapper because in the css, it relies on selecting the next sibling to toggle the dropdown, and it does not work another level down, only when on the same level as the class being "searched" for.  -->
           <input type="checkbox" class="faq-dropdown-toggle" name="faq-dropdown-toggle-7" id="faq-dropdown-toggle-7" />
 
           <label for="faq-dropdown-toggle-7" class="faq-toggle-header"><svg viewBox="0 0 10 10"
               aria-label="Plus icon for dropdown menu">
-              <!-- Messy piece, but simplifies things although it sacrifices readability -->
-              <path d="M5,0 L5,10" id="Line" stroke="black" />
-              <path d="M10,5 L0,5" id="Line-Copy" stroke="black" />
+              <path d="M5,0 L5,10"  stroke="black" />
+              <path d="M10,5 L0,5"  stroke="black" />
 
             </svg>
             <span>Utveksling</span>
@@ -330,21 +321,18 @@
           </div>
         </section>
         <section class="faq-single-question-wrapper">
-          <!-- This input has to remain outside the wrapper because in the css, it relies on selecting the next sibling to toggle the dropdown, and it does not work another level down, only when on the same level as the class being "searched" for.  -->
           <input type="checkbox" class="faq-dropdown-toggle" name="faq-dropdown-toggle-8" id="faq-dropdown-toggle-8" />
 
           <label for="faq-dropdown-toggle-8" class="faq-toggle-header"><svg viewBox="0 0 10 10"
               aria-label="Plus icon for dropdown menu">
-              <!-- Messy piece, but simplifies things although it sacrifices readability -->
-              <path d="M5,0 L5,10" id="Line" stroke="black" />
-              <path d="M10,5 L0,5" id="Line-Copy" stroke="black" />
+              <path d="M5,0 L5,10"  stroke="black" />
+              <path d="M10,5 L0,5"  stroke="black" />
 
             </svg>
             <span>Videre studiemuligheter ved OsloMet</span>
           </label>
 
           <div class="faq-dropdown-content">
-            <!-- Remember changed aria-expanded stuff -->
             <p><a href="https://www.oslomet.no/studier/tkd/anvendt-data-informasjonsteknologi">
                 Anvendt data- og informasjonsteknologi (ACIT)</a>
 
@@ -362,7 +350,7 @@
       <hr>
     </section>
     <section class="study-wrapper">
-      
+<!-- Wrapper class again, this time due to wanting to replicate what OsloMet has already done -->
       <article>
         <h2>Studiets oppbygging</h2>
         <h3>1. studieår</h3>

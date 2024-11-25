@@ -1,3 +1,16 @@
+/* 
+Table of Contents
+
+1. General Styling for all pages,
+2. Specific Styling for Index page
+2.1 Media Queries
+3 Specific Styling for Activity Page
+3.1 Media Queries
+
+
+*/
+
+
 :root {
   background-color: #ffffff;
   --oslometgul: #ffd500;
@@ -256,8 +269,6 @@ a:visited {
 
 
 /* This section contains styling for the "studiets oppbygging, which was moved from the faq section to its own, for reasons of readibility  */
-
-
 .course-group-header{
   font-family: "Moderat Bold", Arial, Helvetica, sans-serif;
   font-size:1rem;
@@ -345,7 +356,7 @@ a:visited {
   display: block;
 }
 
-/* Using the same logic above for getting the checked, although a bit hacky selector-wise */
+/* Using the same logic as above for getting the checked element, although a bit hacky selector-wise */
 .faq-dropdown-toggle:checked~label>svg>path:nth-child(1) {
   transition: all .2s ease-in-out;
   transform: rotate(90deg);
@@ -361,6 +372,9 @@ label>svg>path:nth-child(1) {
 
 
 /* Start of Activity Specific Styling */
+.activity-external-button{
+  padding: 1rem 0rem;
+}
 
 /* Phone Screen Scaling */
 @media all and (max-width: 680px) {
@@ -372,13 +386,6 @@ label>svg>path:nth-child(1) {
 
 /* Widescreen Scaling */
 @media all and (min-width: 680px) {
-
-  .main-activity-image {
-    margin-top: 1rem;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-  }
 
   .activity-image-group {
     display: grid;
@@ -397,3 +404,5 @@ label>svg>path:nth-child(1) {
 .main-activity-image>img {
   margin-top: 1rem;
 }
+
+/* End of Activity Specific Styling */
