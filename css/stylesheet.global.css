@@ -69,6 +69,7 @@ hr {
   max-width: 80rem;
   width: 85%;
 }
+
 .various-wrapper{
   margin: 3rem auto 3rem auto;
   max-width: 65rem;
@@ -212,14 +213,7 @@ a:visited {
     grid-template-columns: 1fr 1fr;
   }
 
-  .course-group-header {
-    padding-left: 0.5em;
-    margin-top: 0;
-    border-left-style: solid;
-    border-left-color: black;
-    border-left-width: 1px;
-
-  }
+ 
 
   .courses-wrapper {
     display: flex;
@@ -263,14 +257,23 @@ a:visited {
 
 /* This section contains styling for the "studiets oppbygging, which was moved from the faq section to its own, for reasons of readibility  */
 
+
+.course-group-header{
+  font-family: "Moderat Bold", Arial, Helvetica, sans-serif;
+  font-size:1rem;
+}
 .course-box {
+  
   width: fit-content;
   border-top-style: solid;
   border-top-color: black;
   border-top-width: 1px;
   padding-top: 1em;
-
 }
+.course-box > a {
+  font-family: "Moderat Bold", Arial, Helvetica, sans-serif;
+}
+
 
 .course-box-lower {
   display: flex;
@@ -283,14 +286,13 @@ a:visited {
   margin-right: 0.5em;
 }
 
-.indented-course-basic {
-  margin-left: 0.5em;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+
+
+
+.student-stories-picture-box{
+  padding: 1rem;
+  background-color: var(--oslometgul);
 }
-
-
-
 .student-stories-button {
 
   background-color: var(--oslometgul);
@@ -305,6 +307,10 @@ a:visited {
 .faq-toggle-header {
   display: flex;
 }
+.faq-toggle-header > span{
+  font-weight: bold;
+  font-size: 1.125rem;
+}
 
 .faq-toggle-header>svg,
 .course-box>svg {
@@ -315,7 +321,6 @@ a:visited {
 }
 
 .faq-dropdown-toggle {
-  -webkit-appearance: none;
   appearance: none;
 }
 
